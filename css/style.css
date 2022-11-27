@@ -10,45 +10,45 @@ html {
 }
 
 body {
-    position: relative;
+   
     width: 1920px;
     font-size: 1rem;
     background-color:#FFFFFF;;;
 }
 
 .wrapper {
-    padding:125px 0 137px 0;
+    height: 700px;
     max-width: 1920px;
     margin: 0 auto;
     background: #EEEFF1;;
 }
 
-.menu {
-    display: block;
+.menu_head {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding-top: 80px;
+    padding-left: 400px;
     list-style: none;
     margin-bottom: 398px;
 }
 
-.menu__link {
-    text-decoration: none; 
+
+.m_link {
+    padding-left: 42px;
     color: #34547A;
-    cursor: pointer;  
+    text-decoration: none;
+     
 }
 
-.menu__link:hover,
-.button:hover,
-.navigation:hover {
+.m_link:hover,
+.but__text:hover {
     color: rgb(199, 85, 19);
 }
 
-.logo__text {
+.head__title {
     position: absolute;
     width: 541px;
     height: 45px;
-    left: 399px;
+    left: 440px;
     top: 257px;
     font-family: 'Roboto';
     font-style: normal;
@@ -56,14 +56,14 @@ body {
     font-size: 48px;
     line-height: 79px;
     color: #000000;
-}   
+}
 
-.content_text {
+.head__text {
     position: absolute;
     width: 540px;
     height: 67px;
-    left: 400px;
-    top: 362px;
+    left: 440px;
+    top: 349px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -74,24 +74,36 @@ body {
 
 .button {
     position: absolute;
-    padding-top: 20px;
     width: 225px;
     height: 65px;
-    left: 399px;
-    top: 494px;
+    left: 398px;
+    top: 481px;
     background: #34547A;
+}
+
+.but__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
     text-align: center;
-    text-decoration: none;
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
 
-.about_me {
+/* container */
+
+.container {
     position: absolute;
-    width: 403px;
-    height: 30px;
-    left: 758px;
+    width: 540px;
+    height: 147px;
+    left: 690px;
     top: 812px;
+}
+
+.cont__me {
+    padding-bottom: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -101,12 +113,7 @@ body {
     color: #000000;
 }
 
-.cont-text {
-    position: absolute;
-    width: 540px;
-    height: 67px;
-    left: 690px;
-    top: 892px;
+.cont__text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -116,26 +123,26 @@ body {
     color: #727272;
 }
 
-.navigation {
+.container__menu {
     position: absolute;
-    width: 1920px;
-    height: 250px;
-    left: 0px;
-    top: 1059px;
-    background: #34547A;   
-}  
-
-.numbers__item {
-    margin-top: 100px;
-    margin-left: 150px;
+width: 1920px;
+height: 250px;
+left: 0px;
+top: 1059px;
+background: #34547A;
 }
 
-.i_work {
+
+
+.container__work {
     position: absolute;
-    width: 403px;
-    height: 30px;
-    left: 758px;
+    width: 540px;
+    height: 147px;
+    left: 689px;
     top: 1409px;
+}
+
+.cont__work {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -145,12 +152,8 @@ body {
     color: #000000;
 }
 
-.cont-text_work {
-    position: absolute;
-    width: 540px;
-    height: 67px;
-    left: 690px;
-    top: 1489px;
+.container__text {
+    padding-top: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -160,15 +163,17 @@ body {
     color: #727272;
 }
 
-.video__item {
-    position: absolute;
-    width: 1110px;
-    height: 600px;
-    left: 700px;
-    top: 1613px; 
+.video {
+padding-top: 80px;
 }
 
-   /* Footer */
+iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+/* footer */
+
 .footer {
     position: absolute;
     width: 1920px;
@@ -178,21 +183,32 @@ body {
     background: #34547A;
 }
 
-
-.logo__name {
+.footer__text {
+    padding-left: 409px;
     padding-top: 50px;
-    padding-left: 406px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
     color: #FFFFFF;
 }
 
-.text_title {
-    padding-left: 406px;
+.footer__terms {
+    padding-left: 409px;
     padding-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+.cont_menu {
+    padding-top: 96px;
+    padding-left: 200px;
+}
+.cont_link {
+    padding: 48px; 
 }
